@@ -70,7 +70,7 @@ class SshDeploy {
 
     console.log(`stopping service ${serviceName} on server ${this.serverAddress}`)
 
-    const result = await this.ssh.execCommand(`sudo systemctl is-active --quiet ${serviceName} && sudo systemctl stop ${serviceName}`)
+    const result = await this.ssh.execCommand(`sudo systemctl stop ${serviceName}`)
 
     if (result.code !== 0) {
       console.log('command failed - stdout:')
