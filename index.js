@@ -56,9 +56,12 @@ class SshDeploy {
 
     const status = await this.getServiceStatus(serviceName)
 
-    if (status === 'activating') {
-      throw new Error('service status is activating - let\'s not try stopping it in this state')
-    }
+    // It may not be ideal to stop a service that may be trying to start, but what this most likely means is that
+    // it's in an infinite loop anyway, so we'll go ahead and just stop it.
+    //
+    // if (status === 'activating') {
+    //   throw new Error('service status is activating - let\'s not try stopping it in this state')
+    // }
 
     if (status === 'inactive') {
       console.log('service is already stopped, no action taken')
