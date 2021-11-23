@@ -1,0 +1,13 @@
+{
+  "name": "ssh-deploy-test-consumer",
+  "version": "1.0.0",
+  "description": "A test project that consumes the @mikeyt23/ssh-deploy module.",
+  "main": "test.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Mike Thompson",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  }
+}

@@ -1,0 +1,2 @@
+Init new project here
+Use dotenv to pull in all vars (server, username, service name, etc)
