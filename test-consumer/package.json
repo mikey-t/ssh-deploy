@@ -8,6 +8,7 @@
   "author": "Mike Thompson",
   "license": "MIT",
   "devDependencies": {
+    "@mikeyt23/ssh-deploy": "0.0.1",
     "dotenv": "^10.0.0"
   }
 }
