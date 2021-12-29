@@ -1,6 +1,6 @@
 {
   "name": "@mikeyt23/ssh-deploy",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Utils to deploy files via ssh",
   "files": [
     "index.js"

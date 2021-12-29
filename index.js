@@ -186,9 +186,9 @@ class SshDeploy {
     if (!serverAppDir) {
       throw new Error('serverAppDir is required')
     }
-    console.log('running "npm ci --production" in directory ' + serverAppDir)
+    console.log('running "npm ci --production --prefer-offline --no-audit" in directory ' + serverAppDir)
     
-    const result = await this.ssh.execCommand('sudo npm ci --production', {cwd: serverAppDir})
+    const result = await this.ssh.execCommand('sudo npm ci --production --prefer-offline --no-audit', {cwd: serverAppDir})
     
     if (result.code !== 0) {
       console.error('error: npm install failed. result: ' + JSON.stringify(result))
